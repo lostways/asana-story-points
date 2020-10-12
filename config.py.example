@@ -1,0 +1,4 @@
+# Example Config
+
+ASANA_TOKEN = "TOKEN" # This is your API Token
+POINTS_FIELD = "Story Points" # Name of number field with story points
