@@ -58,7 +58,7 @@ def get_point_counts(section_id):
         task_list[task.get('gid')] = {'name' : task.get('name'), 'assignee': assignee.get('name'), 'points' : int(field.get('number_value') or 0)}
         points_sum[assignee.get('name')] = points_sum.get(assignee.get('name'),0) + int(field.get('number_value') or 0)
 
-  return points_sum
+  return render_template('points.html',points_sum=points_sum)
 
 if __name__ == "__main__":
   app.run()

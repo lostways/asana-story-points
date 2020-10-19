@@ -1,0 +1,8 @@
+{% extends "template.html" %}
+{% block content %}
+    <h2>Points</h2>
+
+    {% for name,points in points_sum.items() %}
+    <li>{{name}} has {{points}} points</li>
+    {% endfor %}
+{% endblock %}
